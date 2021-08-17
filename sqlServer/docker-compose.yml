@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  sqlServerDb:
+    image: "mcr.microsoft.com/mssql/server"
+    environment:
+      SA_PASSWORD: "DiLb984ImW"
+      ACCEPT_EULA: "Y"
+    ports:
+     - "1433:1433" 
+    container_name: SqlServerDockerMain
+    volumes:
+      - "./SqlServer-db-data:/var/opt/mssql/data"
+
+
+volumes: 
+  db-data:

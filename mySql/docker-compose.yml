@@ -1,0 +1,16 @@
+version: "3.8"
+
+services: 
+  mySQL:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    restart: always
+    container_name: mySqlDockerMain
+    ports:
+      - "3306:3306"
+    volumes: 
+      - "./mySql-db-data:/var/lib/mysql"
+
+volumes: 
+  db-data:
