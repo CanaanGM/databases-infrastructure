@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  azurelocal:
+    image: divieon/legacyazurite
+    ports:
+      - "10000:10000"
+      - "10001:10001"
+      - "10002:10002"
+    container_name: localAzureDb
+    volumes:
+      - "./mySql-db-data:/var/lib/mysql"
+volumes:
+  db-data:
