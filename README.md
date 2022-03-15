@@ -12,7 +12,14 @@ mySql:
 "server=localhost:3306;user id=USERNAME;password=PASSWORD;persistsecurityinfo=True"
 
 Postgres:
-"\nServer=127.0.0.1;Port=5433;Database=DB<Can be Empty>;User Id=User;Password=Password;"
+dotnet:
+"Server=127.0.0.1;Port=5433;Database=DB<Can be Empty>;User Id=User;                 Password=Password;"
+
+psycopg2 (python):
+```
+    dialect+driver://username:password@host:port/database
+    postgresql+psycopg2://admin:admin1234@localhost/fastlms
+```
 
 DataLake local-dev
 "LocalAzureConnection": "AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;DefaultEndpointsProtocol=http;BlobEndpoint=http://<CONTAINER NAME>:10000/devstoreaccount1;QueueEndpoint=http://<CONTAINER NAME>:10001/devstoreaccount1;TableEndpoint=http://<CONTAINER NAME>:10002/devstoreaccount1;"
