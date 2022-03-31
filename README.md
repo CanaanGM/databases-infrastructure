@@ -21,8 +21,11 @@ psycopg2 (python):
     postgresql+psycopg2://admin:admin1234@localhost/fastlms
 ```
 
+# Vault warden (local host)
+connection should be "http:localhost:< PORT>"
+
 DataLake local-dev
-"LocalAzureConnection": "AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;DefaultEndpointsProtocol=http;BlobEndpoint=http://<CONTAINER NAME>:10000/devstoreaccount1;QueueEndpoint=http://<CONTAINER NAME>:10001/devstoreaccount1;TableEndpoint=http://<CONTAINER NAME>:10002/devstoreaccount1;"
+"LocalAzureConnection": "AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;DefaultEndpointsProtocol=http;BlobEndpoint=http://< CONTAINER NAME>:10000/devstoreaccount1;QueueEndpoint=http://< CONTAINER NAME>:10001/devstoreaccount1;TableEndpoint=http://< CONTAINER NAME>:10002/devstoreaccount1;"
 
 useful links:
 

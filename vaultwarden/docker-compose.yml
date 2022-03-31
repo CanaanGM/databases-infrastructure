@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  vaultWarden:
+    image: "vaultwarden/server"
+    ports:
+      - "8907:80"
+      - "3012:3012"
+    container_name: vaultWarden
+    volumes:
+      - "./vaultWarden-data:/data/"
+    
+volumes:
+  db-data:
