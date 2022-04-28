@@ -9,5 +9,7 @@ services:
     container_name: localAzureDb
     volumes:
       - "./mySql-db-data:/var/lib/mysql"
+    restart: always
+    
 volumes:
   db-data:

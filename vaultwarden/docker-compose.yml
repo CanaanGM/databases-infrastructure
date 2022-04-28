@@ -9,6 +9,7 @@ services:
     container_name: vaultWarden
     volumes:
       - "./vaultWarden-data:/data/"
+    restart: always
     
 volumes:
-  db-data:
+  vaultWarden-data:

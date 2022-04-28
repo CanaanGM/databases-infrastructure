@@ -12,6 +12,7 @@ services:
     container_name: SqlServerDockerMain
     volumes:
       - "./SqlServer-db-data:/var/opt/mssql/data"
+    restart: always
 
 
 volumes: 
