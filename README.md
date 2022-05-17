@@ -21,13 +21,32 @@ psycopg2 (python):
     postgresql+psycopg2://admin:admin1234@localhost/fastlms
 ```
 
-# Vault warden (local host)
+## Vault warden (local host)
 connection should be "http:localhost:< PORT>"
 
 DataLake local-dev
 "LocalAzureConnection": "AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;DefaultEndpointsProtocol=http;BlobEndpoint=http://< CONTAINER NAME>:10000/devstoreaccount1;QueueEndpoint=http://< CONTAINER NAME>:10001/devstoreaccount1;TableEndpoint=http://< CONTAINER NAME>:10002/devstoreaccount1;"
 
-useful links:
+## Airflow
+
+#### create a user thru WSL
+``` 
+    echo -e "AIRFLOW_UID=$(id -u)" > .env
+```
+#### init thre db
+```
+    docker-compose up airflow-init
+```
+### run 
+```
+    docker-compose up airflow-init
+```
+### ???
+
+### PROFIT !! @ http://localhost:8080/
+``` https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html#setting-the-right-airflow-user  ```
+
+# useful links:
 
 https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-configure-mssql-conf?view=sql-server-ver15#datadir
 
