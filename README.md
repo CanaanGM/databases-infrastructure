@@ -3,19 +3,24 @@ created like this to make thew host system clean without running servers all the
 
 using docker compose untill i learn a better way~!
 
+
+### Apps to view the databases:
+- relational : DBeaver : https://dbeaver.io/
+- Non Relational: VSCode untill i find something better
+
 How to connect ?:
 
-Sql server:
+### Sql server:
 "Server=localhost;Database=Master;User Id=sa;Password=PASSWORD;
 
-mySql:
+### mySql:
 "server=localhost:3306;user id=USERNAME;password=PASSWORD;persistsecurityinfo=True"
 
-Postgres:
+### Postgres:
 dotnet:
 "Server=127.0.0.1;Port=5433;Database=DB<Can be Empty>;User Id=User;                 Password=Password;"
 
-psycopg2 (python):
+### psycopg2 (python):
 ```
     dialect+driver://username:password@host:port/database
     postgresql+psycopg2://admin:admin1234@localhost/fastlms
@@ -30,14 +35,14 @@ mongodb://mongodbadmin:admin@localhost:27017
 - https://www.mongodb.com/docs/manual/reference/connection-string/
 
 
-## Vault warden (local host)
+### Vault warden (local host)
 connection should be "http:localhost:< PORT>"
 
 DataLake local-dev
 "LocalAzureConnection": "AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;DefaultEndpointsProtocol=http;BlobEndpoint=http://< CONTAINER NAME>:10000/devstoreaccount1;QueueEndpoint=http://< CONTAINER NAME>:10001/devstoreaccount1;TableEndpoint=http://< CONTAINER NAME>:10002/devstoreaccount1;"
 
-## Airflow
-
+### Airflow
+-[ ] to be added lator
 #### create a user thru WSL
 ``` 
     echo -e "AIRFLOW_UID=$(id -u)" > .env
