@@ -42,7 +42,7 @@ DataLake local-dev
 "LocalAzureConnection": "AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;DefaultEndpointsProtocol=http;BlobEndpoint=http://< CONTAINER NAME>:10000/devstoreaccount1;QueueEndpoint=http://< CONTAINER NAME>:10001/devstoreaccount1;TableEndpoint=http://< CONTAINER NAME>:10002/devstoreaccount1;"
 
 ### Airflow
--[ ] to be added lator
+- [ ] to be added lator
 #### create a user thru WSL
 ``` 
     echo -e "AIRFLOW_UID=$(id -u)" > .env
