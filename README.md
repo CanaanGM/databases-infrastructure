@@ -21,6 +21,15 @@ psycopg2 (python):
     postgresql+psycopg2://admin:admin1234@localhost/fastlms
 ```
 
+### mongodb
+connection string: 
+```
+mongodb://[username:password@]host1[:port1][,...hostN[:portN]][/[defaultauthdb][?options]]
+mongodb://mongodbadmin:admin@localhost:27017
+```
+- https://www.mongodb.com/docs/manual/reference/connection-string/
+
+
 # Vault warden (local host)
 connection should be "http:localhost:< PORT>"
 
