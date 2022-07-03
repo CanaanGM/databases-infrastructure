@@ -30,7 +30,8 @@ dotnet:
 connection string: 
 ```
 mongodb://[username:password@]host1[:port1][,...hostN[:portN]][/[defaultauthdb][?options]]
-mongodb://mongodbadmin:admin@localhost:27017
+mongodb://mongodbadmin:admin@localhost:27017   << with auth
+mongodb://localhost:27017/                     << without auth
 ```
 - https://www.mongodb.com/docs/manual/reference/connection-string/
 
