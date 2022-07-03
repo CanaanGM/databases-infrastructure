@@ -6,7 +6,7 @@ using docker compose untill i learn a better way~!
 
 ### Apps to view the databases:
 - relational : DBeaver : https://dbeaver.io/
-- Non Relational: VSCode untill i find something better
+- Non Relational: Mongo Compass : https://www.mongodb.com/try/download/compass
 
 How to connect ?:
 
