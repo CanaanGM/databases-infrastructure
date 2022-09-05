@@ -33,6 +33,10 @@ mongodb://[username:password@]host1[:port1][,...hostN[:portN]][/[defaultauthdb][
 mongodb://mongodbadmin:admin@localhost:27017   << with auth
 mongodb://localhost:27017/                     << without auth
 ```
+##### or
+```
+docker exec -it < container name/id > /bin/bash
+``` 
 - https://www.mongodb.com/docs/manual/reference/connection-string/
 
 

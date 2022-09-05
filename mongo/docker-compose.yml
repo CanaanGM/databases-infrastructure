@@ -6,9 +6,7 @@ services:
     ports:
       - "27017:27017"
     restart: always
-    environment:
-      - MONGO_INITDB_ROOT_USERNAME=mongoadmin
-      - MONGO_INITDB_ROOT_PASSWORD=admin 
+ 
     container_name: mogodbDockerMain
     volumes: 
      - "./mongo-db-data:/data/db"
