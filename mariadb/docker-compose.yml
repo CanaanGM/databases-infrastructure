@@ -1,0 +1,19 @@
+version: "3.8"
+
+services: 
+  mariadb:
+    image: mariadb:10.5
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: master
+      MYSQL_USER: notroot
+      MYSQL_PASSWORD: root
+    restart: on-failure
+    volumes:
+      - "./maria-db-data:/var/lib/mysql"
+    ports:
+      - "3307:3306"
+
+
+volumes: 
+  db-data:
