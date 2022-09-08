@@ -70,7 +70,6 @@ DataLake local-dev
 broker:9092, localhost:9092
 ```
 
-
 #### create a user thru WSL
 
 ```
@@ -98,7 +97,6 @@ broker:9092, localhost:9092
 # useful links:
 
 1. https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-configure-mssql-conf?view=sql-server-ver15#datadir
-2. https://hub.docker.com/_/aerospike
-3. https://www.kafkatool.com/download.html
+2. https://hub.docker.com/r/aerospike/aerospike-server
 
 for future me: the db files are in g drive <3
