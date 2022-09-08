@@ -1,8 +1,8 @@
-version: '2.8'
+version: '3.8'
 
 services:
   aerospike:
-    image: aerospike
+    image: aerospike/aerospike-server
     environment:
       - NAMESPACE=adfalcon
       - MEM_GB=1
@@ -11,3 +11,6 @@ services:
       - "3000-3002:3000-3002"
     volumes:
       - "./aerospike-db-data:/opt/aerospike/etc/"
+
+volumes:
+  aerospike-db-data:
