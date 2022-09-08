@@ -21,7 +21,7 @@ How to connect ?:
 ### Postgres:
 
 dotnet:
-"Server=127.0.0.1;Port=5433;Database=DB`<Can be Empty>`;User Id=User;                 Password=Password;"
+"Server=127.0.0.1;Port=5433;Database=DB `<Can be Empty>`;User Id=User;                 Password=Password;"
 
 ### psycopg2 (python):
 
@@ -59,6 +59,18 @@ DataLake local-dev
 
 - [ ] to be added lator
 
+### Kafka
+
+- normal connection thru localhost:9092
+
+- if u wanna connect thru offsetexplorer* do this:
+  - in the advanced tap add to bootstrap folders:
+
+```
+broker:9092, localhost:9092
+```
+
+
 #### create a user thru WSL
 
 ```
@@ -87,6 +99,5 @@ DataLake local-dev
 
 1. https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-configure-mssql-conf?view=sql-server-ver15#datadir
 2. https://hub.docker.com/_/aerospike
-
 
 for future me: the db files are in g drive <3
