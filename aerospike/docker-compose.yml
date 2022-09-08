@@ -1,0 +1,13 @@
+version: '2.8'
+
+services:
+  aerospike:
+    image: aerospike
+    environment:
+      - NAMESPACE=adfalcon
+      - MEM_GB=1
+    restart: always
+    ports:
+      - "3000-3002:3000-3002"
+    volumes:
+      - "./aerospike-db-data:/opt/aerospike/etc/"
