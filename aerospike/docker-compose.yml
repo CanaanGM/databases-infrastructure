@@ -2,15 +2,18 @@ version: '3.8'
 
 services:
   aerospike:
-    image: aerospike/aerospike-server
-    environment:
-      - NAMESPACE=adfalcon
-      - MEM_GB=1
+    image: aerospike:ce-6.0.0.2
+      
     restart: always
     ports:
       - "3000-3002:3000-3002"
     volumes:
       - "./aerospike-db-data:/opt/aerospike/etc/"
+      - "./aero_config:/config_folder"
 
+    command: ["--config-file","/config_folder/custom.conf"]
+
+   
 volumes:
   aerospike-db-data:
+  aero_config:
