@@ -99,5 +99,6 @@ broker:9092, localhost:9092
 1. https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-configure-mssql-conf?view=sql-server-ver15#datadir
 2. https://hub.docker.com/r/aerospike/aerospike-server
 3. https://hub.docker.com/_/aerospike
+4. https://docs.aerospike.com/server/operations/install/docker-desktop
 
 for future me: the db files are in g drive <3
