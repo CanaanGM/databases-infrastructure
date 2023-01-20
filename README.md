@@ -14,14 +14,19 @@ How to connect ?:
 
 "Server=localhost;Database=Master;User Id=sa;Password=PASSWORD;
 
+--- 
+
 ### mySql:
 
 "server=localhost:3306;user id=USERNAME;password=PASSWORD;persistsecurityinfo=True"
+
+---
 
 ### Postgres:
 
 dotnet:
 "Server=127.0.0.1;Port=5433;Database=DB `<Can be Empty>`;User Id=User;                 Password=Password;"
+
 
 ### psycopg2 (python):
 
@@ -29,6 +34,13 @@ dotnet:
     dialect+driver://username:password@host:port/database
     postgresql+psycopg2://admin:admin1234@localhost/fastlms
 ```
+#### connect to it while running in docker/docker-compose containers 
+
+```bash
+docker exec -it <CONTAINER NAME> psql -U <USERNAME>
+```
+
+---
 
 ### mongodb
 
@@ -48,6 +60,8 @@ docker exec -it < container name/id > /bin/bash
 
 - https://www.mongodb.com/docs/manual/reference/connection-string/
 
+--- 
+
 ### Vault warden (local host)
 
 connection should be "http:localhost:< PORT>"
@@ -55,9 +69,13 @@ connection should be "http:localhost:< PORT>"
 DataLake local-dev
 "LocalAzureConnection": "AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;DefaultEndpointsProtocol=http;BlobEndpoint=http://< CONTAINER NAME>:10000/devstoreaccount1;QueueEndpoint=http://< CONTAINER NAME>:10001/devstoreaccount1;TableEndpoint=http://< CONTAINER NAME>:10002/devstoreaccount1;"
 
+--- 
+
 ### Airflow
 
 - [ ] to be added lator
+
+--- 
 
 ### Kafka
 
