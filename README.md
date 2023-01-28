@@ -12,10 +12,10 @@ using docker compose untill i learn a better way~!
 How to connect ?:
 
 ### Sql server:
-
+> [this](https://www.connectionstrings.com/sql-server/) is handy ~!
 "Server=localhost;Database=Master;User Id=sa;Password=PASSWORD;
 > dotnet 7, u need to trust the connection
-"Server=localhost;Database=Master;User Id=sa;Password=PASSWORD; Trusted_Connection=true; TrustedServerCertificate=true;
+"Server=localhost;Database=Master;User Id=sa;Password=PASSWORD; Trusted_Connection=true; ;Trust Server Certificate=true;
 
 --- 
 
