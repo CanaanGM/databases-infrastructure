@@ -14,6 +14,8 @@ How to connect ?:
 ### Sql server:
 
 "Server=localhost;Database=Master;User Id=sa;Password=PASSWORD;
+> dotnet 7, u need to trust the connection
+"Server=localhost;Database=Master;User Id=sa;Password=PASSWORD; Trusted_Connection=true; TrustedServerCertificate=true;
 
 --- 
 
