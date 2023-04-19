@@ -45,7 +45,9 @@ docker exec -it <CONTAINER NAME> psql -U <USERNAME>
 
 ---
 
-### mongodb
+### [mongodb](https://hub.docker.com/_/mongo)
+
+in the container: mongo -> mongosh .
 
 connection string:
 
