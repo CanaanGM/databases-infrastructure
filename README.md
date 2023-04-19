@@ -11,17 +11,28 @@ using docker compose untill i learn a better way~!
 
 How to connect ?:
 
+### [portainer](https://docs.portainer.io/start/intro)
+
+> a docker images management interface
+
+connect to : `localhost:900` and go from there
+
+----
+
+
 ### Redis
 
-`redis-cli -a < password u sat in docker-compose >` 
+`redis-cli -a < password u sat in docker-compose >`
 
-- dotnet
+- dotnet:
+
 ```txt
   "CacheSettings": {
     "ConnectionString": "localhost:6379"
   }
 ```
 
+----
 
 ### Sql server:
 > [this](https://www.connectionstrings.com/sql-server/) is handy ~!
