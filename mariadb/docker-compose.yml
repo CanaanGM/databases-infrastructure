@@ -13,6 +13,7 @@ services:
       - "./maria-db-data:/var/lib/mysql"
     ports:
       - "3306:3306"
+    container_name: maria-local
 
 
 volumes: 
