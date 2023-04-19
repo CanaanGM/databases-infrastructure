@@ -1,8 +1,12 @@
-databases folder that houses all sorts of types'o bases,
+> databases folder that houses all sorts of types'o bases,
 created like this to make thew host system clean without running servers all the time.
 
 using docker compose untill i learn a better way~!
 ![](./static-files/log-horizon-database.gif)
+
+- TODO:
+
+- [ ] split this up into a readme for each db
 
 ### Apps to view the databases:
 
