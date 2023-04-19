@@ -15,6 +15,14 @@ How to connect ?:
 
 `redis-cli -a < password u sat in docker-compose >` 
 
+- dotnet
+```txt
+  "CacheSettings": {
+    "ConnectionString": "localhost:6379"
+  }
+```
+
+
 ### Sql server:
 > [this](https://www.connectionstrings.com/sql-server/) is handy ~!
 "Server=localhost;Database=Master;User Id=sa;Password=PASSWORD;
