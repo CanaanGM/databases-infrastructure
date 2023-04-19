@@ -11,6 +11,10 @@ using docker compose untill i learn a better way~!
 
 How to connect ?:
 
+### Redis
+
+`redis-cli -a < password u sat in docker-compose >` 
+
 ### Sql server:
 > [this](https://www.connectionstrings.com/sql-server/) is handy ~!
 "Server=localhost;Database=Master;User Id=sa;Password=PASSWORD;
