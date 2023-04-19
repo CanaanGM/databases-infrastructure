@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  redisLocal:
+    image: "redis"
+    # command: redis-server --save 20 1 --loglevel warning --requirepass RediIsLocalYo!
+    ports:
+     - "6379:6379" 
+    container_name: RedisLocal
+    volumes: 
+      - "./Redis-data:/data"
+    restart: always
+
+
+volumes: 
+  Redis-data:
