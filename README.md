@@ -42,7 +42,7 @@ connect to : `localhost:900` and go from there
 > [this](https://www.connectionstrings.com/sql-server/) is handy ~!
 "Server=localhost;Database=Master;User Id=sa;Password=PASSWORD;
 > dotnet 7, u need to trust the connection
-"Server=localhost;Database=Master;User Id=sa;Password=PASSWORD; Trusted_Connection=true; ;Trust Server Certificate=true;
+"Server=localhost;Database=Master;User Id=sa;Password=PASSWORD; ;Trust Server Certificate=true;
 
 --- 
 
@@ -72,7 +72,7 @@ docker exec -it <CONTAINER NAME> psql -U <USERNAME>
 
 ---
 
-### [mongodb](https://hub.docker.com/_/mongo)
+# [mongodb](https://hub.docker.com/_/mongo)
 
 in the container: mongo -> mongosh .
 
@@ -144,11 +144,21 @@ broker:9092, localhost:9092
 
 ``https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html#setting-the-right-airflow-user ``
 
+---
+
+# RabbitMq
+
+- username and password **if** not specified are `guest/guest`.
+- can be accessed @ localhost:15672 - which is the management dashboard
+
+
 # useful links:
 
 1. https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-configure-mssql-conf?view=sql-server-ver15#datadir
 2. https://hub.docker.com/r/aerospike/aerospike-server
 3. https://hub.docker.com/_/aerospike
 4. https://docs.aerospike.com/server/operations/install/docker-desktop
+
+
 
 for future me: the db files are in g drive <3

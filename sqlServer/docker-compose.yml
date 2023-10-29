@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   sqlServerDb:
-    image: "mcr.microsoft.com/mssql/server"
+    image: "mcr.microsoft.com/mssql/server:2019-latest"
     user: root
     environment:
       SA_PASSWORD: "DiLb984ImW"

@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  local_service_bus:
+  image: rabbitmq:3-management-alpine
+  ports:
+    - 5672:5672
+    - 15672:15672
+
+
+      
